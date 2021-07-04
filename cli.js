@@ -20,3 +20,7 @@ program
 
 program.parse(process.argv);
 
+if (process.argv.length === 2) {
+    // 说明用户直接运行 node cli.js
+    void api.showAll()
+}
